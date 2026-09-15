@@ -25,7 +25,7 @@ Sin variables de Supabase, la aplicación funciona en modo local exactamente con
 
 ## Persistencia offline
 
-Los checks, horas reales, outputs de EDUVO, materias institucion educativa, active recall, ajustes y cambios temporales se guardan inmediatamente en `localStorage`. La interfaz nunca espera al servidor para marcar un bloque ni para mostrar la rutina.
+Los checks, horas reales, outputs de EDUVO, materias UNAM, active recall, ajustes y cambios temporales se guardan inmediatamente en `localStorage`. La interfaz nunca espera al servidor para marcar un bloque ni para mostrar la rutina.
 
 La PWA mantiene una cola local de cambios pendientes. Cuando vuelve internet, intenta sincronizarla automáticamente. El backup local continúa disponible en **Ajustes → Exportar JSON** e **Importar JSON**.
 
@@ -44,7 +44,7 @@ Copia `.env.example` a `.env.local` para desarrollo y completa la publishable ke
 
 1. En el proyecto `sbhhjalelwfasmshxail`, abre **SQL Editor** y ejecuta [`supabase/migrations/20260824000000_routine_os_sync.sql`](supabase/migrations/20260824000000_routine_os_sync.sql).
 2. En **Authentication → Providers**, deja activo **Email**.
-3. En **Authentication → URL Configuration**, usa como Site URL la URL publicada y añade como Redirect URL: `https://AsterNodeLab.github.io/ssdanielmo/`.
+3. En **Authentication → URL Configuration**, usa como Site URL la URL publicada y añade como Redirect URL: `https://asternodelab.github.io/ssdanielmo/`.
 4. Confirma que las tablas `daily_records` y `user_settings` tienen RLS activo. La migración ya crea las políticas necesarias.
 
 La sincronización aplica Last Write Wins por registro diario usando `updated_at`. Un dato remoto más antiguo nunca reemplaza silenciosamente una versión local más reciente. Al primer login, la caché local existente se compara con Supabase y se sube sin borrar historial.
@@ -76,7 +76,7 @@ Después de abrir una vez la PWA publicada, activa el modo avión o desconecta l
 
 ## Instalar en Android
 
-1. Abre `https://AsterNodeLab.github.io/ssdanielmo/` en Chrome desde el Moto G Stylus.
+1. Abre `https://asternodelab.github.io/ssdanielmo/` en Chrome desde el Moto G Stylus.
 2. Espera a que cargue una vez y abre el menú de Chrome.
 3. Elige **Añadir a pantalla de inicio** o **Instalar aplicación**.
 

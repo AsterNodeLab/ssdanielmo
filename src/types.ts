@@ -35,10 +35,10 @@ export type BlockKind =
   | "sleep"
   | "health"
   | "meal"
-  | "institucion educativa"
+  | "unam"
   | "eduvo"
-  | "institucion educativa"
-  | "training"
+  | "uvm"
+  | "classes"
   | "gym"
   | "break"
   | "transition"
@@ -57,8 +57,8 @@ export type MetricKey =
   | "unamRecall"
   | "eduvoPrimary"
   | "eduvoOutput"
-  | "institucion educativa"
-  | "topClass";
+  | "uvm"
+  | "classSession";
 
 export type Stage = "learn" | "execute" | "review";
 
@@ -72,7 +72,7 @@ export interface RoutineBlock {
   kind: BlockKind;
   metric?: MetricKey;
   stage?: Stage;
-  code?: string;
+  code?: "E1577" | "E1598";
   tags?: string[];
 }
 
@@ -136,7 +136,7 @@ export interface WeekMetrics {
   eduvoSessions: number;
   eduvoOutputs: Array<{ dateKey: string; title: string; output: string }>;
   gym: number;
-  topClasses: number;
-  institucion educativa: number;
+  classSessions: number;
+  uvm: number;
 }
 

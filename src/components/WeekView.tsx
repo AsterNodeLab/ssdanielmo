@@ -70,11 +70,11 @@ export function WeekView({ data, dates, currentDateKey, streak, onPrevious, onNe
         <div className="section-heading"><div><span className="eyebrow">Prioridades</span><h2 id="metrics-heading">Métricas que importan</h2></div></div>
         <div className="metric-grid">
           <MetricCard icon={<Moon size={18} />} label="Sueño" value={`${metrics.sleep} / 5`} detail="anclas nocturnas" tone="sleep" />
-          <MetricCard icon={<Brain size={18} />} label="institucion educativa" value={`${metrics.unamDeep} / 5`} detail={`${metrics.unamRecall} active recall`} tone="institucion educativa" />
+          <MetricCard icon={<Brain size={18} />} label="UNAM" value={`${metrics.unamDeep} / 5`} detail={`${metrics.unamRecall} active recall`} tone="unam" />
           <MetricCard icon={<Rocket size={18} />} label="EDUVO" value={`${metrics.eduvoSessions} / 5`} detail={`${metrics.eduvoOutputs.length} outputs`} tone="eduvo" />
           <MetricCard icon={<Dumbbell size={18} />} label="Gym" value={`${metrics.gym} / 5`} detail="entrenamientos" tone="gym" />
-          <MetricCard icon={<GraduationCap size={18} />} label="Training" value={`${metrics.topClasses} / 4`} detail="clases preparadas" tone="top" />
-          <MetricCard icon={<BookOpen size={18} />} label="institucion educativa" value={`${metrics.institucion educativa} / 2`} detail="bloques semanales" tone="institucion educativa" />
+          <MetricCard icon={<GraduationCap size={18} />} label="Clases" value={`${metrics.classSessions} / 4`} detail="clases preparadas" tone="classes" />
+          <MetricCard icon={<BookOpen size={18} />} label="UVM" value={`${metrics.uvm} / 2`} detail="bloques semanales" tone="uvm" />
         </div>
       </section>
 

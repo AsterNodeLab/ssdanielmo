@@ -183,7 +183,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 .current-icon--eduvo { background: var(--green-soft); color: var(--green); }
 .current-icon--gym { background: var(--amber-soft); color: var(--amber); }
-.current-icon--training, .current-icon--class { background: var(--violet-soft); color: var(--violet); }
+.current-icon--classes, .current-icon--class { background: var(--violet-soft); color: var(--violet); }
 .current-icon--meal { background: var(--green-soft); color: var(--green); }
 .current-icon--sleep { background: var(--surface-soft); color: var(--ink-soft); }
 
@@ -322,11 +322,11 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 .metric-icon { display: inline-grid; width: 31px; height: 31px; place-items: center; border-radius: 10px; background: var(--surface-soft); color: var(--ink-soft); }
 
 .metric-card--sleep .metric-icon { color: var(--ink-soft); }
-.metric-card--institucion educativa .metric-icon { background: var(--blue-soft); color: var(--blue); }
+.metric-card--unam .metric-icon { background: var(--blue-soft); color: var(--blue); }
 .metric-card--eduvo .metric-icon { background: var(--green-soft); color: var(--green); }
 .metric-card--gym .metric-icon { background: var(--amber-soft); color: var(--amber); }
-.metric-card--top .metric-icon { background: var(--violet-soft); color: var(--violet); }
-.metric-card--institucion educativa .metric-icon { background: var(--blue-soft); color: var(--blue); }
+.metric-card--classes .metric-icon { background: var(--violet-soft); color: var(--violet); }
+.metric-card--uvm .metric-icon { background: var(--blue-soft); color: var(--blue); }
 
 .metric-label { color: var(--ink-soft); font-size: 0.7rem; font-weight: 700; }
 
