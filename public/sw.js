@@ -1,4 +1,4 @@
-const VERSION = "routine-os-v1";
+const VERSION = "routine-os-v2";
 const APP_BASE = new URL("./", self.location).pathname;
 const STATIC_CACHE = `${VERSION}-static`;
 
