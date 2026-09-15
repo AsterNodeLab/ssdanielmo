@@ -18,14 +18,14 @@ interface CurrentBlockCardProps {
 }
 
 function StageTrail({ current }: { current: RoutineBlock }) {
-  if (current.code !== "Group A") return null;
+  if (current.code !== "E1577") return null;
   const stages = [
     { key: "learn", label: "Aprender" },
     { key: "execute", label: "Ejecutar" },
     { key: "review", label: "Repaso" },
   ];
   return (
-    <div className="stage-trail" aria-label="Etapas de formación">
+    <div className="stage-trail" aria-label="Etapas E1577">
       {stages.map((stage, index) => (
         <span className={`stage-trail__item${stage.key === current.stage ? " stage-trail__item--current" : ""}`} key={stage.key}>
           <span className="stage-trail__number">{index + 1}</span>
